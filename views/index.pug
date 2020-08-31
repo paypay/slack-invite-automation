@@ -7,12 +7,14 @@ html
     link(href="css/style.css", rel="stylesheet", type="text/css")
     link(href="//fonts.googleapis.com/css?family=Lato:300,400,700,900,700italic|Open+Sans:700italic,400,600,300,700,800", rel="stylesheet", type="text/css")
   body
+    #head-bg
+      img(id="logo" src="/images/logo.png", alt="")
     #wrapper
       .main
         .header
           h1
-            strong #{community}
-          h2 #{__('HEADER', community)}
+            strong #{__('header1')}
+          h2 #{__('HEADER')}
         .content
           .information
             form(method="POST", action="invite")#join-form.form
